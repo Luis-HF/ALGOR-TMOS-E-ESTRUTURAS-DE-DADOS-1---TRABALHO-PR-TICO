@@ -1,0 +1,9 @@
+venv/
+
+dados/
+
+codigo/gerador
+codigo/ordenacao
+codigo/busca
+
+resultados/
