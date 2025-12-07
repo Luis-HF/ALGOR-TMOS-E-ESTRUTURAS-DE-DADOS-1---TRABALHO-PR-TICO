@@ -127,6 +127,6 @@ int executar_testes_ordenacao() {
 }
 
 
-//int main() {
-//    return executar_testes_ordenacao();
-//}
+int main() {
+   return executar_testes_ordenacao();
+}
