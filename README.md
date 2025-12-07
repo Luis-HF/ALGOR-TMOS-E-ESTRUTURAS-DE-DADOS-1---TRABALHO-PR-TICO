@@ -21,10 +21,12 @@ B. Python e Bibliotecas de Análise
 Execute os seguintes comandos no terminal, a partir do diretório raiz do projeto, para compilar os três executáveis necessários (todos são salvos na pasta codigo/):
 
 # 1. Compila o Gerador de Dados
->>gcc -o codigo/gerador codigo/gerador_dados.c codigo/utils.c -Wall
+>>gcc -o codigo/gerador codigo/gerador.c codigo/utils.c -Wall
 
 # 2. Compila o Teste de Ordenação
 >>gcc -o codigo/ordenacao codigo/ordenacao.c codigo/utils.c -Wall
+
+Agora devemos comentar a função main() inteira que está dentro de ordenacao.c para que seja possível compilar corretamente o próximo.
 
 # 3. Compila o Teste de Busca
 >>gcc -o codigo/busca codigo/busca.c codigo/ordenacao.c codigo/utils.c -Wall

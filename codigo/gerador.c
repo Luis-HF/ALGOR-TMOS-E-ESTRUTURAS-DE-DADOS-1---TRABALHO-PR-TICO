@@ -4,7 +4,6 @@
 #include <string.h>
 #include "utils.h"
 
-// Gera o vetor para o cenário específico
 void gerar_vetor(int* vetor, long long N, const char* cenario) {
     if (strcmp(cenario, "aleatorio") == 0) {
         srand(time(NULL));
@@ -44,7 +43,6 @@ int main() {
             gerar_vetor(vetor, N, cenario);
 
             char nome_arquivo[100];
-            // Exemplo: dados/pequeno_aleatorio.bin
             sprintf(nome_arquivo, "dados/%s_%s.bin", nome_tam, cenario);
             
             escrever_vetor_binario(nome_arquivo, vetor, N);
